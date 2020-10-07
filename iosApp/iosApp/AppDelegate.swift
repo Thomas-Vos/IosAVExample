@@ -1,12 +1,18 @@
 import UIKit
+import shared
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    private var avIssueExample: AvIssueExample!
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        avIssueExample = AvIssueExample()
+        avIssueExample.start()
+        
         return true
     }
 
